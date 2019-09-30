@@ -1,0 +1,16 @@
+spring:
+  datasource: # 配置数据库连接的基本信息
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/demo?zeroDateTimeBehavior=convertToNull&autoReconnect=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: rootroot
+    type: com.zaxxer.hikari.HikariDataSource
+  jpa: # 配置jpa的基本信息
+    database: mysql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        format_sql: true
