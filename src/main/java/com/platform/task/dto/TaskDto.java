@@ -15,4 +15,6 @@ public class TaskDto extends BaseAbstractEntity {
 	/** 序列化ID **/
 	private static final long serialVersionUID = 8524934291039417400L;
 
+	
+	//Filed
 }
